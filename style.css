@@ -1,15 +1,4 @@
 
-@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
-@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
-@font-face {font-family: "PIXymbols LCD  W00 Regular";
-  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot"); /* IE9*/
-  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("b9dbfdab75a87427f11b07a3ef16efad.woff2") format("woff2"), /* chrome、firefox */
-  url("b9dbfdab75a87427f11b07a3ef16efad.woff") format("woff"), /* chrome、firefox */
-  url("b9dbfdab75a87427f11b07a3ef16efad.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("b9dbfdab75a87427f11b07a3ef16efad.svg#PIXymbols LCD  W00 Regular") format("svg"); /* iOS 4.1- */
-};
-@font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
 *,
 *::before,
 *::after {
@@ -108,9 +97,8 @@ max-height:100vh;
         text-align: center;
         top: 5%; /* Adjust this value to move the positioned div up and down */
         background: rgba(0, 0, 0, 0.8);
-        font-family: Arial,sans-serif;
         color: #fff;
-        max-width:700px;
+        max-width:550px;
         height:48px;
         padding-top:3px;
         width:80%; /* Set the width of the positioned div */
@@ -125,13 +113,7 @@ max-height:100vh;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     transform: translate(50%,50%);   
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-    max-width:750px;
+    max-width:550px;
     width:80%; /* Set the width of the positioned div */
     border-radius: 50px;
     height:48px;
@@ -149,7 +131,7 @@ max-height:100vh;
     font-family: bd-brick, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: #FED22A;
+    color: #ffffff;
     font-size: 28px;
     text-transform: uppercase;
     border-radius: 50px;
@@ -159,15 +141,14 @@ max-height:100vh;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-  
   animation: marquee 15s linear infinite;
-  animation-delay: 3s;
+
   }
 
   .delay
   {
     animation: marquee 20s linear infinite!important;
-    animation-delay: 3s!important;
+  
     
   }
   
@@ -217,8 +198,8 @@ max-height:100vh;
   {
     height: 144px;
     width: 177px;
-    margin-bottom:24px;
-    margin-top:max(20vh,12vh);
+    margin-bottom:100px;
+   
   }
 
   .main-text
@@ -466,7 +447,7 @@ box-shadow:0 0 5px #F7CD28 , 0 0 25px #F7CD28,
 
 .payments
 {
-margin-top:min(20vh,50px);  
+margin-top:min(20vh,15vh);  
 }
 .payments-img
 {
@@ -478,10 +459,28 @@ margin-top:min(20vh,50px);
   color: #FED22A;
 }
 
-@media only screen and (min-width: 2000px)
+@media only screen and (min-width: 2250px)
 {
   .payments
   {
   margin-top:max(20vh,50px);  
   }
+  .logo
+  {
+    margin-bottom:24px;
+    margin-top:max(20vh,12vh);
+  }
+
+   .first > .animated-text-2 
+  {
+    max-width:750px;
+  }
+
+  .first > .animated-text
+  {
+    max-width:750px;
+  }
+
+
+
 }
