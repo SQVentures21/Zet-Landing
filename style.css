@@ -1,4 +1,15 @@
 
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@font-face {font-family: "PIXymbols LCD  W00 Regular";
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot"); /* IE9*/
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff2") format("woff2"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff") format("woff"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("b9dbfdab75a87427f11b07a3ef16efad.svg#PIXymbols LCD  W00 Regular") format("svg"); /* iOS 4.1- */
+};
+@font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
 *,
 *::before,
 *::after {
@@ -63,7 +74,7 @@ max-height:100vh;
   transform: scale(1, 1);
 }
 50% {
-  transform: scale(1.1,1);
+  transform: scale(1.05,1);
 }
 100% {
   transform: scale(1, 1);
@@ -93,12 +104,12 @@ max-height:100vh;
         z-index: 999;
         margin-inline:auto;
         border-radius: 50px;
-         transform: translate(50%,50%);   
+         transform: translate(10%,50%);   
         text-align: center;
-        top: 5%; /* Adjust this value to move the positioned div up and down */
+        top:20px; /* Adjust this value to move the positioned div up and down */
         background: rgba(0, 0, 0, 0.8);
         color: #fff;
-        max-width:550px;
+        max-width:750px;
         height:48px;
         padding-top:3px;
         width:80%; /* Set the width of the positioned div */
@@ -109,13 +120,13 @@ max-height:100vh;
     position: absolute;
     z-index: 999;
     margin: 0 auto;
-    bottom:6%;
+    bottom:70px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    transform: translate(50%,50%);   
-    max-width:550px;
+    transform: translate(10%,50%);   
+    max-width:750px;
     width:80%; /* Set the width of the positioned div */
-    border-radius: 50px;
+    border-radius: 70px;
     height:48px;
     padding-top:3px;
 }
@@ -199,6 +210,7 @@ max-height:100vh;
     height: 144px;
     width: 177px;
     margin-bottom:100px;
+    margin-top:24px;
    
   }
 
@@ -255,6 +267,7 @@ max-height:100vh;
       display: flex;
       text-align: center;
       justify-content: center;
+      font-family: bd-brick, sans-serif;
      
   }
 
@@ -278,22 +291,19 @@ max-height:100vh;
 {
 
   font-family: bd-brick, sans-serif;
-
-  font-weight: 500;
+  font-size: 40px;
   font-style: normal;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 44px;
-letter-spacing:5px;
-text-align: center;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing:5px;
+  text-align: center;
 
 }
 
 
 .day-text
 {
-font-family: Roboto;
+font-family: bd-brick, sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -474,11 +484,13 @@ margin-top:min(20vh,15vh);
    .first > .animated-text-2 
   {
     max-width:750px;
+    transform: translate(30%,50%); 
   }
 
   .first > .animated-text
   {
     max-width:750px;
+    transform: translate(30%,50%); 
   }
 
 
