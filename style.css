@@ -1,0 +1,487 @@
+
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@font-face {font-family: "PIXymbols LCD  W00 Regular";
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot"); /* IE9*/
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff2") format("woff2"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff") format("woff"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("b9dbfdab75a87427f11b07a3ef16efad.svg#PIXymbols LCD  W00 Regular") format("svg"); /* iOS 4.1- */
+};
+@font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    background-color: black;
+  height:100vh;
+}
+
+a 
+{
+    text-decoration:none!important;
+}
+/* 
+utility class */
+.container
+{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px !important;
+  display: flex;
+  height:100vh;
+
+}
+
+
+
+.flex 
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+  }
+
+  .flex-main
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* 
+background animation */
+  
+.zoom-in-zoom-out {
+width:50vw;
+min-height:850px;
+max-height:100vh;
+ animation:zoom-in-zoom-out 20s ease-out infinite; */
+
+}
+
+@keyframes zoom-in-zoom-out {
+0% {
+  transform: scale(1, 1);
+}
+50% {
+  transform: scale(1.1,1);
+}
+100% {
+  transform: scale(1, 1);
+}
+}
+
+
+
+/* text-slider animation */
+
+
+.animated-text
+{
+    background-color: black;
+}
+
+    .first
+    {
+        position: relative;
+        display: inline-block;
+        height:100vh;
+    }
+
+    .first > .animated-text
+    {
+        position: absolute;
+        z-index: 999;
+        margin-inline:auto;
+        border-radius: 50px;
+         transform: translate(50%,50%);   
+        text-align: center;
+        top: 5%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        max-width:700px;
+        height:48px;
+        padding-top:3px;
+        width:80%; /* Set the width of the positioned div */
+    }
+
+ .first > .animated-text-2
+ {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    bottom:6%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transform: translate(50%,50%);   
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width:750px;
+    width:80%; /* Set the width of the positioned div */
+    border-radius: 50px;
+    height:48px;
+    padding-top:3px;
+}
+ 
+
+  .wrapper {
+    width:100%;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 4px;
+    margin: 0 auto;
+    white-space: nowrap;
+    font-family: bd-brick, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FED22A;
+    font-size: 28px;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  
+  animation: marquee 15s linear infinite;
+  animation-delay: 3s;
+  }
+
+  .delay
+  {
+    animation: marquee 20s linear infinite!important;
+    animation-delay: 3s!important;
+    
+  }
+  
+ 
+  
+  
+  .marquee p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  
+  
+
+
+ 
+  .second
+  {
+     
+      background-position: top center;
+      background-repeat: no-repeat;
+      width:50vw;
+      z-index:9999;
+      height:100vh;
+    
+
+  }
+
+  .centred-container
+  {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo
+  {
+    height: 144px;
+    width: 177px;
+    margin-bottom:24px;
+    margin-top:max(20vh,12vh);
+  }
+
+  .main-text
+  {
+    margin-bottom:32px;
+    
+  }
+  
+  .main-text-h1
+  {
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FED22A;
+
+    
+  }
+
+  .offer-p
+  {
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+       color:#686B6C;
+   
+
+  
+  }
+
+  .offer {
+
+    margin-bottom:32px;
+  }
+  
+
+  .count-down
+  {
+      color:white;
+      margin-bottom:32px;
+  }
+  
+  
+  .count
+  {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+     
+  }
+
+  .count-dots
+  {
+    display: flex;
+    margin:0 7px 0 2px;
+    padding-bottom: 30px;
+    font-size:40px;
+    margin-top:-5px;
+  }
+
+  .container-2
+  {
+      width:500px;
+      margin-inline:auto;
+  }
+
+
+ .day , .hour , .minute , .seconds
+{
+
+  font-family: bd-brick, sans-serif;
+
+  font-weight: 500;
+  font-style: normal;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+letter-spacing:5px;
+text-align: center;
+
+}
+
+
+.day-text
+{
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+color:#686B6C;
+}
+
+
+.steps
+{
+    display: flex;
+    justify-content: center;
+    gap:32px;
+    margin-bottom: 32px;
+}
+.step1 , .step2 , .step3
+{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    position: relative;
+    width:176px;
+    
+
+
+ 
+
+}
+
+.step1 , .step2 , .step3 > p
+{
+  
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+    
+    
+}
+
+
+
+.step-p
+{
+    
+    font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  top:20px;
+}
+
+.step-number-image-1
+{
+  width:58px;
+  height:80px;
+  margin-left:33px;
+}
+
+.step-number-image-2
+{
+  width:58px;
+  height:80px;
+  margin-left:38px;
+}
+
+
+.step-number-image-3
+{
+  width:58px;
+  height:80px;
+  margin-left:33px;
+}
+
+
+.abs-1
+{
+  right:16px;
+}
+
+.abs-2
+{
+  right:26px;
+}
+
+.abs-3
+{
+  right:30px;
+}
+
+
+.button-r
+{
+  height: 48px;
+  width: 151px;
+  border-radius: 8px;
+  padding: 16px 28px 16px 28px;
+  background-color:#F7CD28;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:black;
+  transition: .4s ease-in;
+
+}
+
+.button-r:hover
+{
+box-shadow:0 0 5px #F7CD28 , 0 0 25px #F7CD28,
+0 0 50px #F7CD28 , 0 0 200px #F7CD28;
+}
+
+
+
+.second-container , .minute-container , .hour-container , .day-container
+{
+  position:relative;
+}
+
+
+.extra-0
+{
+  left:0px;
+}
+.extra
+{
+  left:2px;
+}
+
+
+
+
+
+.payments
+{
+margin-top:min(20vh,50px);  
+}
+.payments-img
+{
+  width:40vw;
+}
+
+.color-second
+{
+  color: #FED22A;
+}
+
+@media only screen and (min-width: 2000px)
+{
+  .payments
+  {
+  margin-top:max(20vh,50px);  
+  }
+}
